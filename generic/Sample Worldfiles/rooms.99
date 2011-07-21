@@ -1,0 +1,22 @@
+#99000
+Base Room for Dwelling Zone~
+The rooms in this zone are to be used STRICTLY for the master
+floorplans that DWELLING objects use to create their areas.
+
+A few things to remember. One: dwelling objects with the PITCHABLE
+flag may only use one-room floorplans - tents and the like. Two:
+other than that, your imagination's the limit. Floorplans can
+basically be just like any other PC home you'd normally build.
+
+After a dwelling object has cloned its floorplan into z100, the
+cloned rooms can then be edited/modified to your heart's content
+with regular builder commands without affecting the master, and
+other dwellings of that same VNUM.
+
+Lastly, all floorplans need to be isolated blocks of rooms -
+they should NOT be linked to ANY OTHER AREA. EVER.
+~
+99 1073807368 0
+0
+S
+$~

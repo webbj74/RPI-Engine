@@ -1,0 +1,14 @@
+#
+# Shadows of Isildur Configuration File
+#
+[server]
+db_core_database	= core_database
+db_core_username	= username
+db_core_password	= password
+db_pc_database		= pc_database
+db_pc_username		= username
+db_pc_password		= password
+db_log_database		= log_database
+db_log_username		= username
+db_log_password		= password
+

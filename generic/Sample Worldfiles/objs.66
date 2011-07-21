@@ -1,0 +1,99 @@
+#66900
+coins te_currency METAL iron disc grens~
+1 Engren cp~
+~
+   This small iron disc looks no bigger than a woman's thumb, and 
+has a design lightly stamped on each side. On the obverse, a 
+regal image of an eldery, grim-faced man is in profile, a spiked 
+crown set on top of his head. The reverse of the coin bears a 
+picture of a ring of mountains rising up from the flat earth.
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 35 131072 0 1
+1.000000 0 0 0 0 0 0
+#66901
+coins te_currency METAL copper dull zzTEFiveCoin~
+5 Engren cp~
+~
+   This small coin, easily of size to fit inside a man's palm, 
+has been minted of some sort of copper alloy. The metal is 
+rather dull, and looks to be somewhat tarnished and corroded 
+about the edges of the coin. On the obverse, a regal image of an 
+eldery, grim-faced man is in profile, a spiked crown set on top 
+of his head. The reverse bears a design of a fort covered in 
+flames, the base surrounded by tiny armoured men. 
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 0 131072 0 1
+5.000000 0 0 0 0 0 0
+#66902
+coins te_currency METAL silver small circular~
+50 Engren cp~
+~
+   This palm-sized coin has been minted from an alloy of silver, 
+the metal somewhat dark and dusky hinting at traces of nickel and 
+tin. On the obverse, a regal image of an eldery, grim-faced man 
+is in profile, a spiked crown set on top of his head. The 
+reverse bears a picture of two jagged lightning bolts crossed 
+over one another, a slender halo encircling them both. 
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 0 131072 0 1
+50.000000 0 0 0 0 0 0
+#66903
+coins te_currency METAL silver brazen~
+200 Engren cp~
+~
+   This palm-sized coin has been minted from a strange alloy of 
+silver, the pale silver bearing a slight brazen tinge to it when 
+viewed in certain lights. On the obverse, a regal image of an 
+eldery, grim-faced man is in profile, a spiked crown set on top 
+of his head. The reverse bears a design of this crown, its 
+simplistic, craggy points depicted from a slight angle. 
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 0 131072 0 1
+200.000000 0 0 0 0 0 0
+#66904
+coins te_currency METAL silver ornate~
+1000 Engren cp~
+~
+   This shiny silver coin is quite large, and ornate, swirling 
+curves have been pressed along the edges of both side of the 
+coin. On the obverse, a regal image of an elderly, grim-faced 
+man is in profile, a spiked crown set on top of his head. The 
+reverse bears a picture of a large section of land, complete with 
+fields, forests, mountains and rivers, set above it a spiked 
+crown. 
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 0 131072 0 1
+1000.000000 0 0 0 0 0 0
+#66905
+coins te_currency METAL gold gleaming heavy~
+10000 Engren cp~
+~
+   This heavy gold coin is also quite large, and elaborately 
+decorated with a design of vines and flowers about the borders of 
+both side of the coin. On the obverse, a detailed and regal 
+image of an elderly, grim-faced man is in profile, a spiked crown 
+set on top of his head. The reverse bears the man in full, clad 
+in a suit of plate armour and with a wicked-headed polearm held 
+in one hand, still in profile. 
+~
+20 4194304 1
+0 0 0 0
+1 0.000000
+0 0 0 0 131072 0 1
+10000.000000 0 0 0 0 0 0
+$~

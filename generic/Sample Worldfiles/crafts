@@ -1,0 +1,66 @@
+[CRAFTS]
+craft general subcraft campfire command make
+  fail: You just can't get the fire going.
+sectors: Trail Field Woods Forest Hills Mountains Swamp Pasture Heath
+  phase
+    1st:  You begin by clearing the area of grass and plants.
+    3rd:  $n begins by clearing the area of grass and plants.
+      t:  30
+
+  phase
+    1st:  You kneel near the middle of the cleared area, and taking up the smallest of $2, begin to make a pile of them.
+    3rd:  $n kneels near the middle of the cleared area, and, taking up the smallest of $2, begins to make a pile of them.
+      t:  15
+
+      2:  (used 2036 65536)
+  phase
+    1st:  You strike $1 till you get a spark, then direct that spark to the tinder.
+    3rd:  $n strikes $1 till $e gets a spark, then directs that spark to the tinder.
+      t:  15
+
+      1:  (held 98099 65536)
+  phase
+    1st:  When the tinder catches, you direct the flickering flames to the twigs, then start piling larger twigs to the campfire.
+    3rd:  When the tinder catches, $n directs the flickering flames to the twigs, then starts piling larger twigs to the campfire.
+      t:  10
+
+  phase
+    1st:  Finally you add the last of the wood to the fire, producing $3.
+    3rd:  Finally $n adds the last of the wood to the fire, producing $3.
+      t:  5
+
+      3:  (produced 97805 65536)
+end
+craft general subcraft dropwood command gather
+sectors: Forest Woods Mountains Heath
+  phase
+    1st:  You ruffle through the underbrush and along the ground, looking for dry sticks and twigs.
+    3rd:  $n ruffles through the underbrush and along the ground, looking for dry sticks and twigs.
+      t:  20
+
+   cost:  moves 10
+  phase
+1stfail:  You can't find enough firewood here.
+3rdfail:  $n looks around for a while, then gives up.
+    1st:  You find $1.
+    3rd:  $n finds $1.
+      t:  15
+
+      1:  (produced 3090 65536)
+end
+craft general subcraft firewood command assemble
+sectors:
+  phase
+    1st:  You select wood from $1 that looks like it'd make a good combination of sizes.
+    3rd:  $n selects wood from $1.
+      t:  30
+
+      1:  (used x6 3090 393216)
+  phase
+    1st:  You set out $2.
+    3rd:  $n sets out $2.
+      t:  20
+
+      2:  (produced 2036 65536)
+end
+[end-crafts]

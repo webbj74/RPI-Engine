@@ -1,0 +1,193 @@
+#0
+Staff Area Base Room~
+   This zone is for Staff offices, OOC areas, and new player 
+commencement rooms. 
+~
+0 1073807368 0
+0
+S
+#121
+Club Endore~
+   The walls of this chamber, tastefully panelled in rich, dark 
+mahogany, lend the area a sophisticated, intimate feel. Tables 
+are scattered about in the slightly lowered pit in the room's 
+center, and large picture windows set into each of the walls look 
+down over the virtual Middle-earth, far, far below. Muted 
+laughter and conversation mingle on the air with the soft, 
+drifting jazz melodies woven by the four-piece set playing on a 
+raised stage in the southwestern corner. A long, polished bar of 
+ebonwood runs along the northern wall, and the bartender directs 
+the efforts of various servers who drift about the room over the 
+dark, plush carpet, dressed in costumes resembling everything 
+from bloodthirsty Orkish raiders to mithril-clad Elves. 
+   A sign, etched in silver, hangs near one of the windows, and a 
+gleaming mithril archway leads out to the south. 
+~
+0 -2080308984 0
+0
+D0
+~
+~
+0 -1  0 20
+D2
+A small silver placard set to the right of the archway
+reads 'To the Museum Foyer' in elegant lettering.
+
+~
+~
+0 -1  0 120
+E
+"sign silver"~
+The sign reads:
+
+        Type LOOK WINDOW to catch a glimpse of a random
+        area of Middle-earth. Pointless, but endlessly
+        amusing. Let us know if you notice anything odd!
+
+
+                                   - Management,
+                                     Club Endore
+
+P.S. - If you are a newly-approved character looking to get into
+       the gameworld proper, use the COMMENCE command to do so.
+~
+S
+#120
+The Museum's Foyer~
+   The absolutely cavernous central foyer of the Museum is a 
+sharp contrast to the smaller, more intimate jazz club set in its 
+northern wing. Fashioned of gleaming white marble lent a 
+softened, bluish hue by the tastefully-arranged lighting 
+fixtures, the walls are adorned by various paintings and murals 
+depicting scenes from Middle-earth. Gracefully fluted columns 
+form a ring about the very center of the foyer, where the 
+mirror-like, smoky grey marble of the floor has been inlaid with 
+a huge, painstakingly-etched map of Arda. 
+   An arch to the north leads to the Museum's jazz club; ornate 
+double doors set to the east bear a silver sign etched with the 
+word 'History', and to the west, similar doors have been labeled 
+in large letters with the word 'Peoples'. To the south, a pair 
+of imposing double doors have been set. 
+~
+0 -1006567416 0
+0
+D0
+A small sign of polished bronze set to the right
+of the archway reads 'Club Endore'.
+
+~
+~
+0 -1  0 121
+D2
+The archway above these stately, iron-reinforced mahogany
+doors reads 'The Ampitheatre' in precise silver lettering.
+
+~
+double doors~
+1 -1  30 70
+E
+map~
+   This map, staggering in scale and breathtaking in artfully-
+crafted detail, shows the whole of Arda; both the land of
+Middle-earth to the east, and the Undying Lands to the west.
+~
+S
+#70
+The Ampitheatre~
+   This colossal ampitheatre could easily seat an innumerable
+number of people. Arrayed in a graceful circle, its tiered
+rings slope down to a large stage in the very center. It is
+fashioned in such a way that allows anything said at the
+center, even the tiniest of whispers, to reach anyone seated
+above quite clearly. Wrought in its entirety from the gleaming,
+silver-veined white marble that comprises the rest of the
+Museum, its sea of seats are upholstered in crushed velvet
+dyed a deep indigo hue. A domed ceiling arches high above,
+and countless lamps provide a soft, clear illumination.
+~
+0 -1006567416 0
+0
+D0
+A silver placard set into the wall near the left-hand
+door reads 'Museum Foyer' in precise lettering.
+
+~
+double doors~
+1 -1  0 120
+S
+#75
+The Junkyard~
+   This is the room where all JUNKed items on the player port are
+transported, to await their decay. This storage area is provided
+solely to ensure that we can recover unique items (such as
+wounded corpses) lost by abuse of this command, or usage of this
+command without the proper roleplay. Please do not remove
+anything from the room for any other reason, and ensure that
+the players are not told of this room's existence.
+   Items stored here will automatically decay after one RL week,
+unless picked up, in which case their timers will be removed.
+~
+0 -2080309248 0
+0
+S
+#122
+Link-Dead Holding Area~
+   This is a holding room for those players who are rescued by 
+the automated linkdeath recovery code. If you're a PC, you 
+should never read this; if you find yourself stuck here, please 
+petition for assistance. Our apologies for the inconvenience. 
+~
+0 -2080309240 0
+0
+S
+#315
+A Private Room in Club Endore~
+   Set aside for the private use of Club Endore's preferred 
+clientele, this spacious sideroom shares the elegant mahogany 
+panelling and plush dark carpeting of the rest of the 
+establishment. Rich bronze sconces bearing muted lamps cast the 
+area in a comfortable, low lighting. The air bears the faintest 
+hint of the soft jazz melodies wafting through the thick walls 
+from the main area of the club, and occasionally muted bits of 
+conversation may be heard. The walls are lined with large glass 
+picture windows, providing a breathtaking view of the star-filled 
+void, and far, far below, the brilliant jewel-blue of Endore. 
+Ornately-panelled double doors lead out into the hallway that 
+will return one to the main area of the club. 
+~
+0 -2080308984 0
+0
+D2
+~
+double doors~
+1 -1  0 121
+E
+door doors~
+   These panelled doors appear to be locked quite securely behind
+you; why would you wish to return to the club, anyway? To visit
+the main area, simply type "quit," and then choose the option to
+log in as a Guest from the menu. Otherwise, to enter Middle-earth
+itself and begin play, simply type #6COMMENCE#0.
+~
+S
+#20
+The Sacred Glade of Aldaron, Lord of Trees~
+   This shaded, cool forest glade is the sacred dwelling of Vala 
+Orome, the Lord of Trees, also called Aldaron in the ancient 
+language of the Quenya. A narrow, crystal-clear brook runs under 
+a cluster of bending weeping willows, making a soft, trickling 
+sound that soothes the senses of those fortunate enough to find 
+shelter here. The chirping of multi-colored songbirds echoes 
+merrily among the high branches of the golden mallorn trees, and 
+the fragrance of wet grass and lovely asphodels and eglantines 
+fills the air. An aura of peace and tranquility pervades this 
+sacred place. 
+~
+0 67108880 6
+0
+D2
+~
+~
+0 -1  0 121
+S
+$~

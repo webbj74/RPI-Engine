@@ -1,0 +1,14 @@
+
+Files in this scope:
+
+INSTALL - Explanation of installation
+Makefile - A no-brainer, I hope.
+start-server - shell script that can boot the server and recover from crashes.
+
+
+Subdirectories in this scope:
+
+src - This directory containing all of the engine code.
+generic - This directory contains all of the generic support files and a small worldfile to help get you started.
+
+

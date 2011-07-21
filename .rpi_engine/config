@@ -1,0 +1,12 @@
+mysql_host = "localhost";
+mysql_user = "shadows";
+mysql_passwd = NULL;
+
+engine_db = "shadows";
+player_db = "shadows_pfiles";
+player_log_db = "server_logs";
+world_db = "shadows_worldfile";
+world_log_db = "shadows_ah";
+server_port = 4500;
+server_mode = "play";
+

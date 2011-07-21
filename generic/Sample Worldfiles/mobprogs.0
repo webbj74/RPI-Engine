@@ -1,0 +1,851 @@
+#15
+enter~
+enter~
+#999
+mobact~
+var integer i
+if (i==0)
+ci "mount stallion"
+i = 1
+endif
+~
+#902
+mobact~
+~
+#902
+hour~
+~
+#4
+mobact~
+var integer vnum
+var integer action
+var char_data pers
+var room_data food
+vnum = 121
+if (action <> 1)
+action = 1
+food = vnum->room
+pers = (food->people)
+while (person)
+ci "load"
+delay 2
+ci "aim d " person->realname
+delay 15
+pers = pers->next_in_room
+endwhile
+action = 0
+endif
+~
+#199
+hour~
+if (mob->in_room == 199)
+ci "wake"
+ci "emote purrs"
+delay 8
+ci "emote hunkers down into a ball, purring still and gazing around serenely."
+delay 8
+endif
+~
+#99
+enter~
+enter ~
+#1100
+hour~
+var integer x
+var integer y
+
+y = number(1,5)
+
+if ( mud_hour == 20 )
+  ci "emote stretches, rolling his head on his shoulders with a satisfied sigh."
+  delay 5
+  ci "say (smiling to himself) Off to the Shield with me!"
+  delay 5
+  ci "emote packs away his pie cart, nodding gruffly."
+  delay 5
+  ci "clockout"
+  while ( mob->in_room != 1023 )
+    ci "track 1023"
+    delay 8
+  endwhile
+  if ( mob->in_room == 1023 )
+    ci "open door west"
+    ci "west"
+    delay 10
+    ci "close door east"
+    delay 5
+    ci "emote tips *hat to the Shield's patrons, making his way to the bar after a long day of work."
+    delay 3
+    ci "sit bar"
+    delay 15
+    ci "emote visibly relaxes, striking up a muted conversation with the barkeep."
+    delay 4
+    ci "tell kieran (smiling tiredly) The usual, if you would."
+    delay 5
+    ci "buy kieran tankard"
+    delay 5
+    ci "emote nods, raising *tankard in thanks and taking a long pull, sighing in contentment."
+    delay 5
+  endif
+endif
+
+if ( mob->in_room == 1108 )
+  ci "drink tankard"
+endif 
+
+if ( mud_hour == 6 )
+  if ( mob->in_room == 1108 )
+    ci "junk tankard"
+    delay 2
+    ci "emote rises slowly from the bar, looking around."
+    ci "stand"
+    delay 10
+    ci "say (sighing) Back to work with me!"
+    delay 3
+    ci "smile"
+    delay 3
+    ci "emote tips *hat to those assembled, before making his way out."
+    delay 5
+    ci "open door east"
+    ci "east"
+    delay 10
+    ci "close door west"
+    ci "clockin"
+  endif
+endif
+
+if ( mob->in_room != 1108 )
+  delay number(1,15)
+  if ( y == 1 )
+    ci "shout Get your fresh meat-pies! Get 'em here!"
+  elseif ( y == 2 )
+    ci "shout Meat-pies for sale! The Steward's favorite, only three pence!"
+  elseif ( y == 3 )
+    ci "shout Fit for an Elven lord, indeed! Get yer meat-pies here!"
+  elseif ( y == 4 )
+    ci "shout Royal sustenance, fer sale here! Get your meat-pies, only three pence!"
+  elseif ( y == 5 )
+    ci "shout Meat-pies for sale, only three pence!"
+  endif
+endif
+
+~
+#1901
+mobact~
+var integer fstarted_one
+if (fstarted_one == 0)
+fstarted_one = 1
+ci "set sprint"
+ci "cartone leave_up"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartone arrive"
+delay 60
+ci "cartone leave_up"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartone arrive"
+delay 60
+ci "cartone leave_up"
+while (mob->in_room <> 1493)
+delay 4
+ci "track 1493"
+endwhile
+ci "cartone arrive"
+delay 60
+ci "cartone leave_down"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartone arrive"
+delay 60
+ci "cartone leave_down"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartone arrive"
+delay 60
+ci "cartone leave_down"
+while (mob->in_room <> 1464)
+delay 4
+ci "track 1464"
+endwhile
+ci "cartone arrive"
+delay 60
+fstarted_one = 0
+endif
+~
+#1902
+mobact~
+var integer fstarted_two
+if (fstarted_two == 0)
+fstarted_two = 1
+ci "set sprint"
+ci "carttwo leave_down"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "carttwo arrive"
+delay 60
+ci "carttwo leave_down"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "carttwo arrive"
+delay 60
+ci "carttwo leave_down"
+while (mob->in_room <> 1464)
+delay 4
+ci "track 1464"
+endwhile
+ci "carttwo arrive"
+delay 60
+ci "carttwo leave_up"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "carttwo arrive"
+delay 60
+ci "carttwo leave_up"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "carttwo arrive"
+delay 60
+ci "carttwo leave_up"
+while (mob->in_room <> 1493)
+delay 4
+ci "track 1493"
+endwhile
+ci "carttwo arrive"
+delay 60
+fstarted_two = 0
+endif
+~
+#1903
+mobact~
+var integer fstarted_three
+if (fstarted_three == 0)
+fstarted_three = 1
+ci "set sprint"
+ci "cartthree leave_down"
+while (mob->in_room <> 1464)
+delay 4
+ci "track 1464"
+endwhile
+ci "cartthree arrive"
+delay 60
+ci "cartthree leave_up"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartthree arrive"
+delay 60
+ci "cartthree leave_up"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartthree arrive"
+delay 60
+ci "cartthree leave_up"
+while (mob->in_room <> 1493)
+delay 4
+ci "track 1493"
+endwhile
+ci "cartthree arrive"
+delay 60
+ci "cartthree leave_down"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartthree arrive"
+delay 60
+ci "cartthree leave_down"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartthree arrive"
+delay 60
+fstarted_three = 0
+endif
+~
+#1904
+mobact~
+var integer fstarted_four
+if (fstarted_four == 0)
+fstarted_four = 1
+ci "set sprint"
+ci "cartfour leave_up"
+while (mob->in_room <> 1493)
+delay 4
+ci "track 1493"
+endwhile
+ci "cartfour arrive"
+delay 60
+ci "cartfour leave_down"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartfour arrive"
+delay 60
+ci "cartfour leave_down"
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartfour arrive"
+delay 60
+ci "cartfour leave_down"
+while (mob->in_room <> 1464)
+delay 4
+ci "track 1464"
+ci "cartfour arrive"
+endwhile
+ci "cartfour leave_up"
+delay 60
+while (mob->in_room <> 1494)
+delay 4
+ci "track 1494"
+endwhile
+ci "cartfour arrive"
+delay 60
+ci "cartfour leave_up"
+while (mob->in_room <> 1495)
+delay 4
+ci "track 1495"
+endwhile
+ci "cartfour arrive"
+delay 60
+fstarted_four = 0
+endif
+~
+#1034
+mobact~
+~
+#1034
+hour~
+~
+#2990
+hour~
+if ( (mud_hour >= 5) && (mud_hour < 19) )
+  if ( mob->in_room == 2125 )
+    ci "unlock gate east"
+    ci "open gate east"
+  endif
+endif
+if ( (mud_hour < 5) || (mud_hour >= 19) )
+  if ( mob->in_room == 2125 )
+    ci "close gate east"
+    ci "lock gate east"
+  endif
+endif
+~
+#2028
+hour~
+if ( (mud_hour >= 5) && (mud_hour < 20) )
+  if ( mob->in_room == 2734 )
+    ci "open slab"
+    delay 4
+    ci "south"
+    delay 8
+    ci "close slab"
+    delay 4
+    ci "south"
+  endif
+  while (mob->in_room != 2734)
+    ci "track 2734"
+    delay 8
+  endwhile
+endif
+if ( (mud_hour > 5) || (mud_hour >= 20) )
+  if ( mob->in_room == 2016 )
+    ci "north"
+    delay 8
+  endif
+  if ( mob->in_room == 2015 )
+    ci "open slab"
+    ci "north"
+    delay 8
+    ci "close slab"
+  endif
+endif
+~
+#2048
+hour~
+if ( mob->in_room == 2070 )
+  if ( mud_hour == 6 )
+    ci "unlock gate"
+    delay 3
+    ci "open gate"
+  endif
+  if ( mud_hour == 18 )
+    ci "close gate"
+    delay 3
+    ci "lock gate"
+  endif
+endif
+~
+#2076
+hour~
+if  (mud_hour == 18) 
+    ci "west"
+    delay 8
+    ci "open door west"
+    delay 375
+    ci "close door west"
+   delay 8   
+    ci "east"
+    endif
+
+if  (mud_hour == 4) 
+    ci "west" 
+   delay 8
+    ci "open door west"     
+    delay 375
+    ci "close door west"
+    delay 8
+    ci "east" 
+endif
+~
+#2152
+hour~
+if  (mud_hour == 18) 
+  while (mob->in_room != 2774)
+     ci "track 2774"
+     delay 8
+   endwhile
+  if (mob->in_room == 2774)
+    delay 24
+    ci "west"
+    delay 8
+    ci "up"
+  endif
+  endif
+
+if  (mud_hour == 4) 
+  while (mob->in_room != 2775)
+     ci "track 2775"
+     delay 8
+   endwhile
+ if (mob->in_room == 2775)
+    delay 24
+    ci "east"     
+  endif
+endif
+~
+#2106
+hour~
+var integer x
+
+if ( (mud_hour >= 5) && (mud_hour < 19) )
+  if ( mob->in_room == 2643 )
+    ci "stand"
+    ci "east"
+    delay 6
+  endif
+  if ( (mob->in_room == 2763) || (mob->in_room == 2762) || (mob->in_room == 2643) )
+    ci "stand"
+    x = number(1,4)
+    if ( x == 1 )
+      while ( mob->in_room != 2525 )
+        ci "track 2525"
+        delay 4
+      endwhile
+    elseif ( x == 2 )
+      while ( mob->in_room != 2477 )
+        ci "track 2477"
+        delay 4
+      endwhile
+    elseif ( x == 3 )
+      while ( mob->in_room != 2472 )
+        ci "track 2472"
+        delay 4
+      endwhile
+    elseif ( x == 4 )
+      while ( mob->in_room != 2469 )
+        ci "track 2469"
+        delay 4
+      endwhile
+    endif
+  endif
+endif
+if ( (mud_hour < 5) || (mud_hour >= 19) )
+  if ( (mob->in_room != 2763) && (mob->in_room != 2762) && (mob->in_room != 2643) )
+    while ( mob->in_room != 2763 )
+      ci "track 2763"
+      delay 4
+    endwhile
+  endif
+  ci "xmob_prog patrol_holdroom"
+  ci "rest"
+endif
+~
+#3006
+hour~
+~
+#3010
+hour~
+~
+#3011
+hour~
+~
+#3032
+hour~
+if (hour == 1)
+ci "refresh milk"
+endif
+~
+#3032
+mobact~
+~
+#3043
+hour~
+~
+#3045
+hour~
+~
+#3061
+hour~
+ci "sleep"
+~
+#3069
+hour~
+ci "follow warg"
+~
+#5260
+hour~
+var integer a 
+a = 3 
+while (a>0) 
+ci "n" 
+delay 6 
+ci "e" 
+delay 6 
+ci "emote walks over towards one of the sword-blade casts next to the smelter." 
+delay 8 
+ci "emote pries open the cast, retrieving an iron blade." 
+ci "retrieve blade" 
+delay 12 
+ci "w" 
+delay 6 
+ci "s" 
+delay 6 
+ci "emote picks up the iron blade with a pair of tongs, holding it out into the flames." 
+delay 12 
+ci "emote leans the blade against the anvil, and proceeds to hit it with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote strikes the iron blade with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote strikes the iron blade with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote strikes the iron blade with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote holds the iron blade into the flames." 
+delay 10 
+ci "emote leans the blade against the anvil, and proceeds to hit it with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote strikes the iron blade with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "emote strikes the iron blade with his hammer." 
+ci "strike blade" 
+delay 10 
+ci "stands up, still holding the blade with his tongs." 
+delay 4 
+ci "n" 
+delay 6 
+ci "emote dips the iron blade into the brackish water." 
+delay 2 
+ci "emote nods with approval as the blade hisses in the water." 
+delay 8 
+ci "s" 
+delay 6 
+ci "emote picks up a simple wooden handle, and slides it onto the thin part of the blade."
+delay 9 
+ci "emote taps the handle with his hammer." 
+ci "finish blade" 
+delay 8 
+ci "s" 
+delay 6 
+ci "e" 
+delay 6 
+ci "e" 
+delay 6 
+ci "emote arranges his blade into the appropriate position on the shelf."
+ci "arrange sword"
+delay 10 
+ci "w" 
+delay 6 
+ci "w" 
+delay 6 
+ci "n" 
+a = (a-1) 
+endwhile
+~
+#5261
+mobact~
+var integer i
+i = number (1,4)
+if (i==1)
+ci "emote wedges his shovel into the heap of iron ore."
+delay 7
+ci "emote throws some iron ore into the flames."
+ci "shovel ore"
+endif
+~
+#5028
+hour~
+~
+#5040
+hour~
+ if  (mud_hour == 7)
+ci "stand"
+while (mob->in_room != 5005)
+ci  "track 5005"
+delay 6
+endwhile
+ if (mob->in_room == 5005)
+ci "speak haradaic"
+ci "say Men!  Form on me!"
+delay 24
+ci "open gate west"
+ci "recruit all"
+delay 8
+ci "say Men!  Move out!"
+delay 6
+   ci "west"
+delay 10
+ci "close gate east"
+delay 8
+ci "open gate west"
+delay 8
+   ci "west"
+delay 10
+ci "close gate east"
+ci "west"
+delay 8
+ci "west"
+  endif
+endif
+
+if  ( mud_hour == 10 )
+while (mob->in_room != 5062)
+ci "track 5062"
+delay 8
+endwhile 
+if (mob->in_room == 5062)
+    ci "open gate east"
+delay 8
+ci "east"
+delay 8
+ci "close gate west"
+delay 8
+    ci "open gate east"
+delay 8
+ci "east"
+delay 8
+ci "close gate west"
+delay 8
+    ci "north"
+delay 8
+ci "speak haradaic"
+ci "say Men!  At ease!"
+delay 4
+ci "sit bench"
+  endif
+endif
+
+if  (mud_hour == 13)
+ci "stand"
+while (mob->in_room != 5005)
+ci "stand"
+ci  "track 5005"
+delay 6
+  endwhile
+if (mob->in_room == 5005)
+ci "speak haradaic"
+ci "say Men!  Form on me!"
+delay 24
+ci "open gate west"
+   ci "recruit all"
+delay 8
+ci "say Men!  Move out!"
+   delay 6
+ci "west"
+delay 10
+ci "close gate east"
+delay 8
+ci "open gate west"
+   delay 8
+ci "west"
+delay 10
+ci "close gate east"
+ci "west"
+delay 8
+   ci "west"
+endif
+endif
+
+if  ( mud_hour == 16 )
+while (mob->in_room != 5062)
+ci "track 5062"
+delay 8
+endwhile 
+if (mob->in_room == 5062)
+    ci "open gate east"
+delay 8
+ci "east"
+delay 8
+ci "close gate west"
+delay 8
+    ci "open gate east"
+delay 8
+ci "east"
+delay 8
+ci "close gate west"
+delay 8
+    ci "north"
+delay 8
+ci "speak haradaic"
+ci "say Men!  At ease!"
+delay 4
+ci "sit bench"
+endif
+endif
+~
+#5024
+hour~
+if ( (mud_hour >= 5) && (mud_hour < 20) )
+  while (mob->in_room != 5008)
+    ci "track 5008"
+    delay 8
+  endwhile
+  ci "rest"
+else
+  ci "stand"
+  while (mob->in_room != 5250)
+    ci "track 5250"
+    delay 8
+  endwhile
+endif
+~
+#5041
+hour~
+if  (mud_hour == 7)
+while (mob->in_room != 5005)
+ci  "track 5005"
+delay 8
+endwhile
+if (mob->in_room == 5005)
+    delay 16
+endif
+endif
+
+if  (mud_hour == 13)
+while (mob->in_room != 5005)
+ci  "track 5005"
+delay 8
+endwhile
+if (mob->in_room == 5005)
+    delay 16
+endif
+endif
+~
+#5049
+hour~
+if ( (mud_hour >= 5) && (mud_hour < 20) )
+  ci "stand"
+  while (mob->in_room != 5250)
+    ci "track 5250"
+    delay 8 
+  endwhile
+else
+  while (mob->in_room != 5024 )
+    ci "track 5024"
+    delay 8
+  endwhile
+  ci "rest"
+endif
+~
+#5067
+hour~
+if ( (mud_hour >= 5) && (mud_hour < 20) )
+  if ( mob->in_room != 5069 )
+    ci "set sprint"
+    while ( mob->in_room != 5069 )
+      ci "track 5069"
+      delay 2
+    endwhile
+    ci "set walk"
+  endif
+endif
+if ( (mud_hour < 5) || (mud_hour >= 20) )
+  if ( mob->in_room == 5069 )
+    ci "set sprint"
+    while ( mob->in_room != 2507 )
+      ci "track 2507"
+      delay 2
+    endwhile
+    ci "set walk"
+  endif
+endif
+~
+#5069
+hour~
+if ( (mud_hour >= 2) && (mud_hour < 20) )
+  if ( mob->in_room != 5268 )
+    while ( (mob->in_room != 5268) )
+      if ( mob->in_room == 5267 )
+        ci "close door west"
+      endif
+      ci "track 5268"
+      delay 4
+    endwhile
+    ci "close door west"
+  endif
+endif
+if ( (mud_hour < 2) || (mud_hour >= 20) )
+  if ( (mob->in_room == 5268) || (mob->in_room == 5267) )
+    while ( mob->in_room != 2507 )
+      ci "track 2507"
+      delay 4
+    endwhile
+  endif
+endif
+~
+#6009
+hour~
+if ( mob->in_room == 6200)
+  if ( mud_hour == 6 )
+    ci "unlock gate"
+    delay 1
+    ci "open gate"
+  endif  
+  if ( mud_hour == 20 )
+    ci "close gate"
+    delay 1
+    ci "lock gate"
+  endif
+endif
+~
+$~

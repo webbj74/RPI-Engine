@@ -1,0 +1,329 @@
+
+/*
+ *  RPI Engine 2.0
+ *  Based on the Shadows of Isildur RPI Engine
+ *
+ */
+
+FOREWORD:
+
+First things first, if you haven't already, you should read the DIKU_LICENSE and SOI_LICENSE files in this directory. This engine is released under both of these licenses, and adherence to them is required. If you do not agree with any of these license provisions, save yourself the trouble and look elsewhere for a codebase; if you breach any of these terms at any time while operating a MUD derived from this code, you will be potentially opening yourself up to a lawsuit for copyright infringement. In other words, please respect the licenses and the code's authors!
+
+
+GENERAL NOTES:
+
+This codebase is based on the December, 2007 version of the player port server from the Shadows Of Isildur. It contains all of the functionality, dervived from the orginal SOI code, but has only a minimal set of worldfiles. It is stable, however, this clean up version has never been used in a full production setting. 
+
+This codebase IS NOT supported by any Shadows of Isildur personnel  however, you may find discussion and support from the forums at Shadows of Isildur. (http://www.middle-earth.us/forums/viewforum.php?f=31). 
+
+
+SYSTEM REQUIREMENTS:
+
+In order to run the RPI Engine, you'll need the following:
+
+- A computer running Linux, UNIX, Free BSD or OS X. The engine has been
+  run successfully on Fedora Core Linux and OS X; it should work on others. 
+- At least 200 megs of hard drive space to start. The more, the better!
+- At least 48 megabytes of RAM, for small playerbases.
+- A mysql database server installation of version 3.23 or higher.
+- Access to -three- -separate- mysql databases on that installation.
+- GCC, to compile and run the server's C-based sourcecode.
+
+
+	
+==================================	
+Setting up the SoI codebase on a home system. 
+
+ This section is intended to help the new owners of a MUD setup the codebase so that they may run it from their home server. If you use a commercial mud hosting provider, they should do all the dirty work for you. 
+
+
+ 1. Download the most current version of the SoI Engine. 
+
+ Currently, it is located here: 
+
+http://www.middle-earth.us/index.php?display=engine 
+
+ 2. You now have a program in the .bz2 format. 
+
+ You will need to extract it twice. The first time changes the extension from .bz2 -> .tgz and then the second extraction takes it down to the file 'pub_release'. 
+
+ 3. What to do with this pub_release folder? 
+
+ Well, organize your file system, placing it somewhere you will remember it and won't be bothered by it. As an example, here is how I organize my server files: 
+
+ $ /home/arato/development/soi-server 
+
+ Of course, you can do whatever you want and use names that are appropriate to you. 
+
+
+ 4. Now that the pub_release folder has a new home (for the sake of this help doc, we'll assume the location is simple /soi-server), and you've CD'd into that directory, let's begin getting the files ready to install. 
+ 
+ 5. Using the simple file location above, my current directory with the pub_release folder, would be: 
+
+ $ /soi-server/pub_release
+ 
+ I'll start with a Player port, so I'll create another directory called pp.
+ 
+ $ /soi-server/pub_release/pp
+
+ CD into the pp/src folder 
+
+ $ /soi-server/pub_release/pp/src 
+
+
+ The main file we have to edit is server.cpp. 
+
+
+ Here's the code you need to manipulate into your favor: 
+
+Code:
+
+ rpie::server::server () 
+ { 
+ Ê // Set Defaults 
+ Ê // Override these in your config file. 
+ Ê set_config ("mysql_host", "localhost"); 
+ Ê set_config ("mysql_user","rpi_engine"); 
+ Ê set_config ("mysql_passwd", "rpi_engine2007"); 
+ Ê 
+ Ê set_config ("engine_db", "rpi_engine"); 
+ Ê set_config ("player_db", "rpi_player"); 
+ Ê set_config ("player_log_db", "rpi_player_log"); 
+ Ê set_config ("world_db", "rpi_world"); 
+ Ê set_config ("world_log_db", "rpi_world_log"); 
+ Ê 
+ Ê set_config ("server_mode", "play"); 
+ Ê set_config ("server_port", "4500"); 
+
+ Ê set_config ("server_path_play", "/usr/local/games/rpi_engine/pp"); 
+ Ê set_config ("server_path_build", "/usr/local/games/rpi_engine/bp"); 
+ Ê set_config ("server_path_test", "/usr/local/games/rpi_engine/tp"); 
+ Ê return; 
+ } 
+
+
+ You'll need to change most of these settings, though only after you've setup your MySQL databases and created a user/password. As an example, if I created a MySQL user/pass of john/123abc!@ and the following databases as so: 
+
+ engine_db = bigjohn 
+ player_db = friends 
+ player_log_db = friends_logs 
+ world_db = john_world 
+ world_log_db = john_world_log 
+
+ I would have the following setup for the Player Port: 
+
+Code:
+
+ rpie::server::server () 
+ { 
+ Ê // Set Defaults 
+ Ê // Override these in your config file. 
+ Ê set_config ("mysql_host", "localhost"); 
+ Ê set_config ("mysql_user","john"); 
+ Ê set_config ("mysql_passwd", "123abc!@"); 
+ Ê 
+ Ê set_config ("engine_db", "bigjohn"); 
+ Ê set_config ("player_db", "friends"); 
+ Ê set_config ("player_log_db", "friends_logs"); 
+ Ê set_config ("world_db", "john_world"); 
+ Ê set_config ("world_log_db", "john_world_log"); 
+ Ê 
+ Ê set_config ("server_mode", "play"); 
+ Ê set_config ("server_port", "4500"); 
+
+ Ê set_config ("server_path_play", "/soi-server/pub_release/pp"); 
+ Ê set_config ("server_path_build", "/soi-server/pub_release/bp"); 
+ Ê set_config ("server_path_test", "/soi-server/pub_release/tp"); 
+ Ê return; 
+ }
+
+
+
+ Remember to save the file. 
+
+ 6. Port 
+
+ You can change the server_port in server.cpp but you also have to 
+ change the port in the executable file in pp/ start-server. 
+
+ While we're talking about start-server file, you can change the number 
+ of restarts at the top: SERVER_RESTARTS=1. Just change the number to 
+ whatever you like. There are a few other things you can change in there as well, including the location of the stdout file, the text to various messages, and the base directory for the game.
+
+ Save the file(s) after you make any changes. 
+
+ 7. Config file and the .rpi_engine folder 
+
+ There is a hidden folder in your pp/ directory called .rpi_engine. One 
+ level down is a file called config.tmpl as a configuation file template. In this folder, you need to have a file called 'config', which is read at server start-up time and over-rides any settings placed in server.cpp. 
+
+ All you need to do is copy the contents of config.tmpl into .rpi_engine/config and then edit the file so that it matches your entries in server.cpp. If you created tp and bp ports as well, you'll need to do this for each of them as well. Any time you need to make changes to the databases, port numbers or other information, you can simply change them in .rpi_engine/config and a simple reboot will make them live. This means you don't have to recompile the server.
+
+
+ 8. MySQL init/load files 
+
+
+ There is a few files in generic/sql that make setting up the DB very easy: 
+
+ init.sql 
+ load.sql 
+
+ There is also a file reset_sql_db.sql but I honestly haven't gotten it to work correctly. If someone knows, let me know, please!  
+
+ 
+ 8a.  Init.sql 
+
+ Load up the init.sql and load.sql files in a text editor. What you need to do here is to find all of your new server settings and change them, where applicable. The lines you need to change are these:
+ 
+ CREATE DATABASE IF NOT EXISTS shadows;
+ CREATE DATABASE IF NOT EXISTS shadows_pfiles;
+ CREATE DATABASE IF NOT EXISTS server_logs;
+ 
+ as well as 
+
+ \u shadows
+ \u shadows_pfiles
+ \u server_logs
+ 
+ Using my example of John, I would load up init.sql and I would search for all of the 'shadows' and change them to 'bigjohn', all of the 'shadows_pfiles' and change them to 'friends', and so on, matching up each of my database names with the default one. 
+ 
+ "server_logs" contains tables that hold long term data for logs, such as commands entered, IPs, payroll and receipt inforamtion for shopkeepers.
+ 
+ "shadows" is the workhorse. It holds all of the forum information for a phpBB forum, as well as most of the tables needed by the game.
+ 
+ "shadows_pfiles" contains tables for clans, dream and the actual character files. 
+ 
+ "shadows_ah" contains the tables for the auction house.
+ 
+ "shadows_worldfile" contains the cues for mob actions.
+ 
+ You may combine these tables into fewer database if you need to, but make certain you adjust the entries in server.cpp  and .rpi_engine/config.
+ 
+ For example, this is the set up that is used by the server without any changes. 
+ engine_db = "shadows";
+ player_db = "shadows_pfiles";
+ player_log_db = "server_logs";
+ world_db = "shadows_worldfile";
+ world_log_db = "shadows_ah";
+ 
+ If you choose to put the tables from "shadows_ah" and "shadows_worldfiles" into "shadows" then you would use this set-up.
+
+ engine_db = "shadows";
+ player_db = "shadows_pfiles";
+ player_log_db = "server_logs";
+ world_db = "shadows";
+ world_log_db = "shadows";
+ 
+ 
+ 8b. Load.sql 
+
+ First thing is to change all of the GRANT options to suit your chosen mysql username and password.
+ 
+ Then, change the "\u shadows" and "\u shadows_pfiles" to your own corresponding database name. 
+
+
+ 8c. Helpfiles.sql
+  Just a simple change here. Make certain you have the right database so  change this statement if needed.
+  
+  \u shadows
+  
+ 
+ 8d. Server_logs.sql
+   If you want to log commands and other actions you will need to adjust this file as well.  Just change the database name if needed.
+   
+   
+   \u server_logs
+   
+ Make certain you saved all of the files. 
+
+ 
+ 9. Make time! 
+
+ You will need to look over the makefile in /src and make any changes as needed for your system. Also, make certain that the location of bash is correct in generic/regions/zone_files.sh
+ 
+ CD into your pp/ directory and type 'make', then 'make install'. 
+ 
+ This will install the files in the /lib directory, install the registry and basic worldfiles structure. It will also install the Mysql tables. Edit /generic/sql/Makefile if needed. 
+ 
+ *If themysql files are not loaded by the makefile, you can follow these directions and do it manually.
+ 
+ 10*. MySQL importing! ---- if the makefile failed
+
+ Using your favorite command-line editor: 
+
+ $ cd /soi-server/pub_release/pp/generic/sql 
+
+ $ mysql -u<user name> -p < init.sql 
+ <key in your password> 
+
+ $ mysql -u<user name> -p < load.sql 
+ <key in your password> 
+
+ $ mysql -u<user name> -p < helpfile.sql 
+ <key in your password>
+   
+   
+  If you want to use the databases for logging, you will also need this statement.
+  
+  $ mysql -u<user name> -p < server_logs.sql 
+ <key in your password> 
+  
+ 
+
+ Everything should've gone hunky dory and you know have initialized your 
+ equivalent of the default databases and loaded in your God account. 
+
+ 
+ 
+ 11. The Fun Part
+ 
+ Now, the game should be ready to run. 
+
+ In the pp/ directory, type: 
+
+ ./start-server pp 
+
+ Some output will come out and, so long as if it doesn't say the 
+ server was shutdown, you should be good to go! 
+
+ Log in to your prefered MUD client, use localhost as the server and 
+ whatever port you described. 
+
+ Account: God 
+ Password: Adminacct 
+
+
+ 12. Setting up additional ports 
+
+
+ To setup a test port and a building port, simply copy the pp in the same folder and name it 'bp' or 'tp'. 
+
+ You will need to revise the server.cpp and/or shadows.cnf files as above.
+ 
+ 
+ 13. Some Hints
+ 
+ If you are short on space, or are worried about security of running three servers from three different versions of the code, there is an alternate set-up to having 3 fully duplicate servers.
+ 
+ The only /src directory you will need is in the TP directory. Use that code to make and test your changes. Then copy the server over to the BP and PP when you are happy with it.
+ 
+1. make in tp/src
+2. login to tp
+3. shutdown reboot
+4. confirm changes
+5. debug if necessary
+6. login to bp
+7. swap binary (I usually leave rebooting to the builders)
+8. login to pp
+9. swap binary (I usually leave rebooting to the server)
+
+The servers for the PP and BP will happily chug along letting your builders build, and your players play, while you churn out more changes in the TP. No worries about bugs getting fixed on one port but not the other ports.
+
+
+ 14. Getting a Jump Start
+ 
+ There are a few files in the generic/Sample Wolrdfiles directory. Simple use these to replace the corresponding files in /pp/regions and you'll start off with some rooms, mobs, objects and crafts! Not much, but enough to get you excited.
+ 
+ 
+ 
+

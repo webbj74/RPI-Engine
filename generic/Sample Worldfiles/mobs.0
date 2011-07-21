@@ -1,0 +1,191 @@
+#6
+goofy-looking man drooling gazing vapidly helper~
+a goofy-looking man~
+A goofy-looking man stands here, drooling and gazing about vapidly.~
+A rather vapid-looking fellow, this man's chin is drenched in 
+drool and loose spittle.  His low brow barely reaches an inch 
+above his eyes, and he keeps his hands clasped behind his back.  
+~
+10 0 4 0 0 5d1+98 1d4+0 0 8 8 0 0 0 0 0
+0 0 2 0 0 0 24 0 0 0 0 0 0 0 0 0
+16 16 16 16 16 16 33 16
+0 0
+0 8 0 0 0 0 0 0 0 0
+8 0 0 0 0 0 8 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 100 0 0 100 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 8 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+#300
+norman newbie~
+norman the Newbie~
+Norman the Newbie stands here, looking lost.~
+Norman is a newbie of nervous disposition.  He knows you're 
+going to send him into nasty places where he will likely die; and 
+he disapproves of it intensely.  Not a lot he can do about it 
+though.  
+~
+8 0 12 0 0 5d1+92 1d2+0 0 8 8 0 0 0 0 0
+0 0 0 0 0 0 24 0 0 0 0 0 0 0 0 0
+17 8 14 11 15 14 36 13
+0 0
+0 20 25 25 25 25 25 0 25 1
+20 15 0 15 0 0 20 0 0 0
+0 15 30 0 30 0 5 0 0 0
+0 0 0 0 0 10 100 0 0 100
+0 0 0 0 0 0 0 0 0 0
+0 0 0 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+#202
+fuzzy black spider small~
+a fuzzy, black spider~
+A small, fuzzy black spider creeps around its glistening web.~
+   Thin, furry legs stem out from the fat, almost perfectly 
+spherical, fuzzy body of this arachnid.  Its movements seem 
+quite paced, save the occasional leap toward prey, or scurried 
+defense.  A single red stripe trails from between twelve beady, 
+fiery eyes down its coal-black body.  
+~
+10 4 2 32 0 5d1+8 1d4+0 0 8 8 0 0 0 0 0
+0 0 0 0 0 0 10 0 0 0 1 0 1 0 0 0
+2 2 2 5 1 1 36 3
+0 0
+0 5 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 100 0 0 100
+0 0 0 0 0 0 0 0 0 0
+0 0 0 95 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+#203
+eagle enormous maple-feathered~
+an enormous, maple-feathered eagle~
+An enormous eagle with maple-colored feathers perches nearby.~
+   Cautiously peering about its surroundings with keen, 
+pine-green eyes, this giant bird of prey stands tall and proud.  
+Sleek, maple-brown feathers, glimmering in the right light, 
+delicately cover its form from head to tail.  Ruffled, shorter 
+feathers of a darker brown protect its sturdy legs to its claws - 
+talons hard and sharp.  This eagle's movements are extremely 
+quick and fluid, despite its immense size, as it soars rapidly 
+and with much ease or simply perches serenely at a cliff or on a 
+tree limb.  
+~
+545521672 4 30 68 0 5d1+120 1d8+0 0 8 8 0 0 0 2 0
+0 0 0 0 0 0 20 0 0 0 2 0 0 0 0 0
+25 15 21 20 15 28 36 14
+0 0
+0 60 0 0 0 0 0 0 0 0
+24 0 0 20 0 0 32 0 0 0
+0 0 0 0 0 0 0 100 0 0
+46 0 0 0 0 0 100 0 0 100
+0 0 0 0 0 0 0 0 0 0
+0 0 0 54 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 55
+0 0 0 0 0 0 0 75 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+#999
+fox jet-black black silver-tipped tail~
+a jet-black fox with a silver-tipped tail~
+A jet-black fox with a silver-tipped tail is here.~
+   Majestic in appearance, this fox has a beautiful lustrous 
+jet-black coat and an eye-catching tail that ends in a silver 
+tip. Its pointy muzzle has a tiny black nose that is always 
+located low to the ground so as to sniff out any potential prey. 
+The fox is very quick and nimble, and seems to have some sort of 
+ability to sense anyone coming too close, making it very hard to 
+catch. 
+~
+2283798536 786432 6 43 0 5d1+25 1d3+0 0 8 8 0 0 0 0 0
+999 0 0 97373 0 0 24 0 0 0 1 33554432 15 2 0 0
+10 8 8 6 14 12 77 20
+65536 0
+0 12 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 10 0 76 74 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 100 0 0
+0 20 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+#104
+annoyed spider variable~
+a rather annoyed spider variable~
+A rather annoyed spider variable rests here malignantly~
+   This spider is of freakish proportions, weighing around eighty 
+pounds and roughly the size of a large horse. Thick, coarse hair 
+covers the creature's entire body, from long, spindly legs to 
+fat, corpulent thorax. Eight ink-black eyes look out at the 
+world, merciless and malignant. From the creature's head a pair 
+of oversized mandibles protrude, razor-sharp. 
+~
+2098218 4 30 32 0 5d1+80 1d8+0 0 7 8 0 0 0 0 0
+0 0 0 0 0 0 24 0 0 0 1 0 0 0 0 0
+16 16 16 16 16 16 81 16
+268435456 0
+0 60 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+8 8 0 0 45 45 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 40 0 0 0 0
+0 100 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+~
+0 0 0
+$~

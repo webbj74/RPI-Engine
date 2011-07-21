@@ -1,0 +1,38 @@
+#66000
+scum-create human gutter dweller~
+a human gutter dweller~
+A human gutter dweller lurks here.~
+   This dirt-streaked, stench-ridden human looks to have been 
+quite some time from a good meal, and even further from a bath. 
+Walking with a hunch, and constantly nervously glancing left and 
+right about the streets and paths of Tur Edendor, their unease is 
+obvious. Despite their nervousness, this human looks quite 
+muscular, hands heavily callused, and not without their fair 
+share of nicks and scars, the bulk most likely earned from 
+working in the labouryards or quarry of the city.
+
+<worn on body>           #2some filthy rags#0
+<worn on feet>           #2some tattered remains of clothing#0
+~
+73 0 24 0 2 5d1+98 1d2+0 0 8 8 0 0 0 0 0
+0 0 0 0 0 0 24 0 0 0 0 2097154 0 0 68681752 0
+16 16 16 16 16 16 81 16
+268435456 0
+0 38 44 38 31 31 32 36 33 32
+45 32 42 39 48 48 44 33 31 39
+41 42 1 0 39 45 0 0 21 50
+0 0 50 0 0 17 16 24 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 42 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 63 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+'member' slum_gang~
+0 0 0
+$~

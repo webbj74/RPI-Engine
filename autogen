@@ -1,0 +1,9 @@
+#!/bin/sh
+#This is a short script I use for my own projects.
+# Some systems have multiple versions of automake installed.
+# The 1.6 version is generally safe to use.
+aclocal
+autoheader
+autoconf
+automake --add-missing
+./configure "$@"

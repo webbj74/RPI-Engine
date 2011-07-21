@@ -1,0 +1,179 @@
+#804
+bread loaf rye food OTHER~
+a loaf of rye bread~
+A loaf of rye bread lies here.~
+   It is a dark loaf of tangy rye-flour bread, with a nutty
+scent and a crispy crust.
+~
+19 4096 16385
+8 0 0 0
+50 0.000000
+0 3 0 30 16777216 0 1
+2.000000 0 0 0 0 0 0
+#666
+object misloaded error database OTHER~
+#1a misloaded object#0~
+#1An object that was incorrectly loaded from the database is here.#0~
+#6OOC:#0
+
+Please inform an admin immediately about this item. If it is on
+the ground in the room, issue a BUG report from the same location;
+if in your inventory, you may issue a report at your leisure.
+
+We apologize for the inconvenience.
+~
+0 0 1
+0 0 0 0
+100 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#161
+berries small wild berry foraged_food VEGETATION~
+several small wild berries~
+Some wild berries have been left here.~
+   These wild berries are small and tender, juicy and shiny in
+the light. There's enough here for a small snack.
+~
+19 4198400 1
+2 0 0 0
+13 0.000000
+0 1 0 30 1024 0 1
+1.000000 0 0 0 0 0 0
+#95
+lean-to leanto rustic wooden **CODE-PROTOTYPE** WOOD~
+a rustic wooden lean-to~
+A rustic wooden lean-to has been erected here to provide shelter.~
+   Constructed crudely but functionally from branches, bark, and 
+leaves, this rustic wooden lean-to is large enough to provide 
+room for a small group of adults seeking shelter. 
+~
+12 0 0
+0 0 0 0
+10000 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#79
+tome leather-bound small LEATHER~
+a small, leather-bound tome~
+A small tome has been left here.~
+~
+54 4096 16385
+25 0 0 0
+5 0.000000
+0 0 0 0 2048 0 1
+25.000000 0 0 0 0 0 0
+#62
+quill writing OTHER~
+a writing quill~
+A writing quill has been discarded here.~
+   This plain feather quill is made from a wingfeather, with a 
+sharpened hollow tip. 
+~
+55 4096 37748737
+0 0 0 0
+10 0.000000
+0 0 0 30 134219776 0 1
+3.000000 0 0 0 0 0 0
+#63
+ink black pot ceramic small OTHER~
+a small ceramic pot of black ink~
+A small ceramic pot has been left here.~
+~
+56 4096 16385
+10 10 0 0
+2 0.000000
+0 
+black ink~
+0 0 0 0 1
+1.000000 0 0 0 0 0 0
+#61
+parchment sheet paper **TEAR_CODE_PROTOTYPE** PARCHMENT~
+a sheet of parchment~
+A sheet of parchment has been discarded here.~
+~
+53 4096 1
+0 0 0 0
+0 0.000000
+0 0 0 0 134217728 0 1
+2.000000 0 0 0 0 0 0
+#5
+beer LIQUID murky~
+filled with murky beer~
+filled with murky beer~
+~
+50 4096 0
+1 2 1 0
+15 0.000000
+0 0 0 0 0 0 1
+0.120000 0 0 0 0 0 0
+#44
+ticket small number paper~
+a small ostler's ticket~
+A small paper ticket with a number is here.~
+~
+44 0 1
+0 0 0 0
+1 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#575
+ticket small paper merchandise~
+a small merchandise ticket~
+A small merchandise ticket has been carelessly left here.~
+~
+67 0 1
+0 0 0 0
+1 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#45
+head~
+a head~
+A head is here.~
+~
+45 0 16385
+0 0 0 0
+10 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#46
+corpse~
+a corpse~
+A corpse is here.~
+~
+15 0 1
+0 0 0 0
+1000 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#195
+statue~
+a remarkably lifelike statue~
+A remarkably lifelike statue looms here.~
+~
+15 0 0
+0 0 0 0
+1000 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#125
+OOC_discussion computer terminal sleek black board OTHER~
+a sleek, black-colored computer terminal~
+A black computer terminal has been placed on a table near a window.~
+~
+22 0 0
+0 0 1 0
+100 0.000000
+0 0 0 0 0 0 1
+0.000000 0 0 0 0 0 0
+#43
+jailbag bag TEXTILE~
+a jailbag~
+A jailbag containing confiscated articles sits here.~
+~
+15 0 1
+100000 0 -1 0
+5000 1.000000
+0 0 0 0 256 0 1
+0.000000 0 0 0 0 0 0
+$~

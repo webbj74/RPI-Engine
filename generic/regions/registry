@@ -1,0 +1,370 @@
+#
+#
+[MAGIC]
+
+#
+#Spell name            Target   PP Del Wear-off message
+#
+
+[end]
+
+[OV-LV-CAP]
+
+#
+# Skill-name        OV                   LV               CAP
+#
+
+Adunaic        "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Alchemy        "(int + wil) / 2"   "(int + wil) / 4"  "(int + wil) * 2 + 5"
+Angerthas-Daeron "(int + wil) / 2" "int / 3"          "(int + wil) * 2 + 5"
+Angerthas-Erebor "(int + wil) / 2" "int / 3"          "(int + wil) * 2 + 5"
+Angerthas-Moria "(int + wil) / 2"  "int / 3"          "(int + wil) * 2 + 5"
+Arnorian-Tengwar "(int + wil) / 2" "int / 3"          "(int + wil) * 2 + 5"
+Atliduk        "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Aura-Sight     "aur"               "aur / 4"          "aur * 3"
+Backstab       "(str + dex) / 2"   "(dex + int) / 4"  "dex*2 + int + agi"
+Baking         "(dex + wil) / 2"   "(dex + wil) / 3"  "int*3 + dex + 10"
+Barter         "(int + wil) / 2"   "(int + wil) / 3"  "int*3 + wil"
+Beleriand-Tengwar "(int + wil) / 2" "int / 3"         "(int + wil) * 2 + 5"
+Black-Speech   "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Block          "(dex + str) / 4"   "(str + dex) / 3"  "str*3 + agi"
+Bonecarving    "(dex + wil) / 2"   "(dex + wil) / 3"  "wil*3 + dex + 7"
+Brawling       "(str + dex) / 4"   "(str + dex) / 3"  "str*2 + dex + 10"
+Brewing        "(dex + wil) / 2"   "(dex + wil) / 3"  "int*3 + dex + 10"
+Certhas-Daeron "(int + wil) / 2"   "int / 3"          "(int + wil) * 2 + 5"
+Candlery       "(int + wil) / 2"   "(int + wil) / 3"  "(int + dex) * 2"
+Clairvoyance   "aur"               "aur / 4"          "aur*3 + int + 5"
+Climb          "(str + dex) / 2"   "(str + dex) / 2"  "dex*2 + str + 5"
+Cookery        "(dex + wil) / 2"   "(dex + wil) / 3"  "int*3 + dex + 10"
+Crossbow       "(dex + agi) / 2"   "(dex + agi) / 4"  "dex*2 + agi + 15"
+Dual-Wield     "(dex + str) / 3"   "(str + dex) / 4"  "dex*2 + agi + 5"
+Danger-Sense   "aur"               "aur / 4"          "aur*3 + int + 5"
+Disarm         "(dex + int) / 3"   "(dex + int) / 3"  "dex*3 + agi + int"
+Distilling     "(dex + wil) / 2"   "(dex + wil) / 3"  "int*3 + dex + 10"
+Dodge          "dex / 2"           "dex / 2"          "agi*2 + dex + 10"
+Dunael         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Dyecraft       "(dex + wil) / 2"   "(dex + wil) / 3"  "dex*2 + int + wil"
+Empathy        "aur"               "aur / 4"          "aur*3 + wil + con"
+Farming        "(con + wil) / 2"   "(con + wil) / 3"  "int*2 + dex + con"
+Forage         "(int + wil) / 2"   "(int + wil) / 2"  "int*2 + dex + 5"
+Gambling       "(aur + wil) / 2"   "int / 4"          "int*2 + wil + aur"
+Gardening      "(con + wil) / 2"   "(con + wil) / 3"  "int*2 + dex + con"
+Gemcraft       "(int + dex) / 2"   "(int + wil) / 5"  "int*3 + dex + wil"
+Glasswork      "(int + dex) / 2"   "(int + wil) / 5"  "int*3 + dex + wil"
+Gondorian-Tengwar "(int + wil) / 2" "int / 3"         "(int + wil) * 2 + 5"
+Haradaic       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Healing        "(int + wil) / 2"   "int / 4"          "aur*3 + int + 5"
+Heavy-Blunt    "str / 2"           "(str + dex) / 2"  "str*4"
+Heavy-Edge     "str / 2"           "str"              "str*3 + dex"
+Heavy-Pierce   "(dex + str) / 2"   "(dex + str) / 3"  "str*3 + agi + 5"
+Herbalism      "int / 2"           "int / 6"          "int*3 + wil"
+Hex            "aur"               "aur / 4"          "aur*3 + int + 5"
+Hide           "(int + dex) / 2"   "(int + dex) / 3"  "agi*2 + dex + 7"
+Hideworking    "(dex + wil) / 2"   "(dex + wil) / 3"  "(agi + dex) * 2"
+Hunt           "(agi + wil) / 2"   "(agi + int) / 3"  "agi*2 + dex + wil + aur"
+Khuzdul        "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Labba          "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Light-Blunt    "dex"               "dex / 2"          "dex*3 + agi"
+Light-Edge     "dex"               "dex / 2"          "dex*3 + agi"
+Light-Pierce   "dex"               "dex / 2"          "dex*3 + agi"
+Listen         "int"               "int / 3"          "int*3 + wil + 10"
+Literacy       "(int + wil) / 2"   "int / 3"          "(int + wil) * 2 + 5"
+Longbow        "(dex + str) / 2"   "(dex + str) / 4"  "dex*2 + str + 15"
+Picklock       "(int + dex) / 2"   "(int + dex) / 4"  "int*2 + dex + agi"
+Psychic-Bolt   "aur"               "aur / 4"          "aur*3 + 5"
+Medium-Blunt   "str / 2"           "(str + dex) / 3"  "str*3 + 10"
+Medium-Edge    "(dex + str) / 5"   "(str + dex) / 4"  "dex*2 + agi + str"
+Medium-Pierce  "dex / 2"           "(str + dex) / 4"  "dex*3 + agi"
+Metalcraft     "(str + dex) / 2"   "(str + dex) / 3"  "str*2 + con + dex"
+Mining         "(str + dex) / 2"   "(str + dex) / 4"  "(str + con) * 2 + 10"
+Nahaiduk       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Norliduk       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Northern-Tengwar "(int + wil) / 2" "int / 3"          "(int + wil) * 2 + 5"
+Numenian-Tengwar "(int + wil) / 2" "int / 3"          "(int + wil) * 2 + 5"
+Orkish         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Parry          "dex / 2"           "dex / 2"          "agi + dex + str + 9"
+Perfumery      "(dex + wil) / 2"   "(dex + wil) / 3"  "int*3 + dex + 10"
+Poisoning      "(int + wil) / 2"   "(int + wil) / 5"  "int*2 + dex + agi"
+Polearm        "(dex + str) / 2"   "(dex + str) / 4"  "str*2 + agi + 10"
+Pottery        "(dex + wil) / 2"   "(dex + wil) / 3"  "wil*3 + dex + 7"
+Prescience     "aur"               "aur / 4"          "aur*3"
+Pukael         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Quenya         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Quenyan-Tengwar "(int + wil) / 2"  "int / 3"          "(int + wil) * 2 + 5"
+Ride           "(aur + agi) / 2"   "aur + agi + dex"  "agi*3 + dex + aur"
+Ritual         "(aur + wil) / 4"   "(aur + wil) / 5"  "wil*3 + int"
+Rohirric       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Sail           "int"               "int * 2 / 5"      "int*3 + wil"
+Sarati         "(int + wil) / 2"   "int / 3"          "(int + wil) * 2 + 5"
+Scan           "(int + wil) / 2"   "(int + aur) / 3"  "int*2 + aur + wil"
+Seafaring      ""                  ""                 "int*3 + con"
+Search         "(int + aur) / 2"   "(int + aur) / 3"  "int*3 + aur + 11"
+Shortbow       "(dex + str) / 2"   "(dex + str) / 4"  "dex*2 + str + 15"
+Silvan         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Sindarin       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Skin           "(int + dex) / 2"   "(int + dex) / 2"  "dex*2 + int + 13"
+Sling          "(dex + str) / 2"   "(dex + agi) / 4"  "dex*2 + agi + 15"
+Sneak          "(int + dex) / 2"   "(int + dex) / 4"  "agi*3 + dex"
+Staff          "(dex + str) / 2"   "(dex + str) / 3"  "(str + agi) * 2 + 5"
+Steal          "(int + dex) / 2"   "(int + dex) / 4"  "dex*2 + agi + int + 9"
+Stonecraft     "(str + dex) / 2"   "(str + dex) / 4"  "(str + con) * 2 + 10"
+Subdue         "(int+dex+str-35)"  "(int + dex) / 6"  "(int+dex+str-36)*3"
+Swim           "(str + con) / 2"   "(str + con) / 2"  "str*2 + con*2 + 10"
+Talathic       "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Tame           "aur"               "(int + wil) / 3"  "aur * 2 + int + wil"
+Telepathy      "aur"               "aur / 4"          "aur*3 + wil + 2"
+Tengwar        "(int + wil) / 2"   "int / 3"          "(int + wil) * 2 + 5"
+Textilecraft   "(dex + wil) / 2"   "(dex + wil) / 3"  "dex*2 + int + wil"
+Throwing       "(dex + str) / 2"   "(dex + str) / 4"  "dex*3 + str"
+Tracking       "(aur + int) / 2"   "(wil + int) / 3"  "wil*2 + aur + int"
+Umitic         "(int + wil) / 2"   "int / 3"          "int * 3 + wil + 5"
+Westron        "(int + wil) / 2"   "int * 2"          "int * 3 + wil + 5"
+Woodcraft      "(dex + wil) / 2"   "(dex + wil) / 3"  "wil*3 + dex + 7"
+
+[end]
+
+[SKILL-MAX-RATES]
+
+# Maximum gains per hour
+#
+#            Maximum Subtract
+#             Gain   per hour
+
+Sneak          4       2
+Hide           3       2
+Search         2       2
+Ritual         2       1
+Listen         1       1
+Atliduk        5       5
+Adunaic        5       5
+Haradaic       5       5
+Westron        5       5
+Dunael         5       5
+Labba          5       5
+Norliduk       5       5
+Rohirric       5       5
+Talathic       5       5
+Umitic         5       5
+Nahaiduk       5       5
+Pukael         5       5
+Sindarin       5       5
+Quenya         5       5
+Silvan         5       5
+Khuzdul        5       5
+Orkish         5       5
+Black-Speech   5       5
+[end]
+
+[VARIABLES]
+
+pulse_violence   1
+[end]
+
+[TABLES]
+
+begin-use-table
+#   skill        delay
+#   ========     =====
+    brawling      35
+    light-blunt   53
+    light-edge    44
+    light-pierce  33
+    medium-blunt  66
+    medium-edge   53
+    medium-pierce 54
+    heavy-blunt   69
+    heavy-edge    55
+    heavy-pierce  59
+    staff         69
+    polearm       66
+end-use-table
+
+begin-combat-message-table
+none any *         $N #S at you with $S #O but misses.
+                   You miss $n with your #s.
+                   $N misses $n with $S #s.
+none advant *      You sidestep $N as $E #S wildly at you!
+                   $n sidesteps your wild #s!
+                   $n sidesteps $N's wild #s.
+none stumble *     You backpedal and trip!
+                   $n backpedals and trips!
+                   $n trips while backpedaling!
+none fumble *      You lose your grip on your #o and drop it!
+                   $n loses $s grip on $s #o and drops it!
+                   $n loses $s grip on $s #o and drops it!
+none nearstumble *  You take a step away from $N's #s and nearly trip!
+                   $n steps back from your #s and nearly trips!
+                   $n nearly trips while backpedaling.
+none nearfumble *  You nearly drop your #o.
+                   $n nearly drops $s #o.
+                   $n nearly drops $s #o.
+block any B        You block $N's #s with your #o.
+                   $n blocks your #s with $s #o.
+                   $n blocks $N's #s with $s #o.
+weaponbreak parry * $N's #O shatters as you forcefully parry it!
+                    Your #O shatters against $n's #o!
+                    $N's #O shatters against $n's #o!
+weaponbreak block * $N's #O shatters against your #o!
+                    Your #O shatters against $n's #o!
+                    $N's #O shatters against $n's #o!
+block shieldbreak *  Your #o shatters beneath the #c #s of $N!
+                     Your #c #s destroys $n's #o!
+                   $N's #c #s destroys $n's #o!
+parry weaponbreak *  You parry $N's #S, but your #o shatters against $s #O!
+                     $n's #o shatters against your #O!
+                     $n's #o shatters as $e parries the $N's #s.
+weaponbreak weaponbreak * Your #o and $N's #O both shatter!
+                          Your #O and $n's $o both shatter!
+                          $N's #O and $n's #o both shatter!
+weaponbreak shieldbreak * Your #o and $N's #O both shatter!
+                          Your #O and $n's $o both shatter!
+                          $N's #O and $n's #o both shatter!
+parry any P        You deftly parry $N's #s with your #o. 
+                   $n deftly parries your #s with $s #o.
+                   $n deftly parries $N's #s with $s #o.
+fumble any *       $N loses his grip on $S #O, which falls to the ground!
+                   You lose your grip on your #O, which falls to the ground!
+                   $N loses $S grip on $S #O, which falls to the ground!
+fumble fumble *    You violently clash with $N, $E drops $S #O, you drop your #o.
+                   You violently clash with $n, $e drops $s #o, you drop your #O. 
+                   $N violently clashes with $n, $N drops #O, and $n drops #o.
+fumble stumble *   $N rushes you and drops $S #O as you fall to the ground.
+                   You rush at $n and lose your #O as $e falls to the ground!
+                   $N rushes at $n and drops $S #O as $n is sent sprawling to the ground.
+fumble nearfumble *   $N drops $S #O as your weapons become tangled!
+                   Your #O becomes tangled with $n's #o and you drop it!
+                   $N drops $S #O as $e becomes tangled with $n.
+fumble nearstumble *  $N drops $S #O as you nearly trip!
+                   You drop your #O as $n nearly trips!
+                   $n stumbles backwards as $N drops $S #O! 
+Hit0 any *         $N #S you#Dwith $S #O.
+                   You #s $n#Dwith your #O.
+                   $N #S $n#Dwith $S #O.
+Hit0 Just_KO *     $N's #s sends you sprawling to the ground, unconscious.
+                   Your #s sends $n sprawling to the ground, unconscious.
+                   $N sends $n sprawling to the ground with a solid #s.
+Hit0 dead *        Your vision fades as $N #S you for the last time!
+                   Your final #s kills $n!
+                   With a brutal #s of $S #O, $N ends the life of $n!
+Hit0 any B         $N #B your #o aside and #S your #L with $S #O.
+                   You #b $n's defenses and #s $m on the #L with your #O.
+                   $N #B $n's #o aside and #S $s #L with $S #O.
+#
+# Devon, I will implement #r as a newline.  You may use that if you wish.
+#
+Hit0 any P         You attempt to parry $N's #s, but it catches you#Don the #L.
+                   You #b $n's parry, and #s $m#Don the #L.
+                   $n attempts to parry, but $N #B $s defenses, and #S $m#Don the #L.
+Hit0 any I         Helpless to defend yourself, $N #S you#Don the #L.
+                   While helpless to stop you, you #s $n#Don the #L.
+                   Unable to defend $mself, $N #S $n#Don the #L.
+Hit0 any F         Your foolhardy attack allows $N to #s you on the #L.
+                   $n attacks recklessly, allowing you to #s $m on the #L.
+                   $n attacks recklessly, allowing $N to #s $m on the #L.
+Hit0 any D         $N #S you#Don the #L as you try to dodge.
+                   You #s $n#Don the #L as $e dodges out of the way.
+                   $N #S $n#Don the #L as $e tries to dodge away.
+Hit1 any *         $N #S your #L with $S #O.
+                   You #s $n's #L with your #O.
+                   $N #S $n's #L with $S #O.
+Hit1 Just_KO *     Your vision fades as you slip into unconsciousness.
+                   $n slumps unconscious to the ground with your well-placed #s.
+                   $n slumps unconscious to the ground after $N's well-placed #s.
+Hit1 dead *        With $N's final #s, you fall to the ground, dead!
+                   With your final #s, $n falls to the ground, dead!
+                   With $S final #s, $N sends $n to the ground, dead.
+Hit1 any I         Helpless to defend yourself, $N #S you#Don the #L.
+                   While helpless to stop you, you #s $n#Don the #L.
+                   Catching $n helpless, $N #S $m#Don the #L.
+Hit2 any *         $N #S your #L#Dwith $S #O.
+                   You #s $n's #L#Dwith your #O.
+                   $N #S $n's #L#Dwith $S #O.
+Hit2 Just_KO *     Your vision fades as you slip into unconsciousness.
+                   $n slumps unconscious to the ground with your well-placed #s.
+                   $n slumps unconscious to the ground after $N's well-placed #s.
+Hit2 dead *        $N ends your life with a quick #s of $S #O.
+                   You finish off $n with a quick #s of your #O.
+                   $N finishes off $n with a quick #s of $S #O.
+Hit2 any F         Your frantic attacks allow $N to #s you on the #L.
+                   $s frantic attacks leave $n open for your #s to #L.
+                   $n's frantic attacks leave $m open for $N's #s to the #L.
+Hit2 any I         While you are helpless, $N #S you#Don the #L.
+                   You #s $n#Don the #L while $e is utterly helpless.
+                   $N #S $n#Don the #L while $e is helpless to stop $M.
+Hit3 any *         $N arcs $S #O into the #L of $n.
+                   You arc your #O into the #L of $n.
+                   $N arcs $S #O into the #L of $n.
+Hit3 Just_KO *     $N sends you into darkness with a #c #s.
+                   You brutally knock $n to the ground with a #c #s.
+                   $N brutally knocks $n to the ground with a #c #s.
+Hit3 dead *        With a final, #c #s, $N ends your suffering.
+                   You end $n's misery with a final, #c #s.
+                   $N ends $n's suffering with a final #c #s.
+Hit3 any I         Unable to defend yourself, $N #C #S you#Don the #L.
+                   Unable to defend $mself, you #C #s $n on the #L.
+                   $N #C #S the helpless $n#Don the #L.
+Hit3 any F         Opening yourself with a frantic attack, $N #S you #d on the #L.
+                   Opening $mself with a frantic attack, you #s $n #d on the #L.
+                   Open after a frantic attack, $N #S $n #d on the #L.
+Hit4 any *         With a #c #s, $N drives $S #O into your #L.
+                   With a #c #s, you drive your #O into $n's #L.
+                   With a #c #s, $N drives $S #O into $n's #L.
+Hit4 Just_KO *     You are brutally knocked unconscious by $N's #c #s.
+                   You #C #s $n, knocking $m unconscious.
+                   $N #C #S $n, knocking $m unconscious!
+Hit4 dead *        $N #C #S your #L, sending you to your grave!
+                   You #C #s $n's #L, sending them to the grave!
+                   $N's #c #s to $n's #L, sends them to the grave!
+stumble any *      $N stumbles as $S tries to #s your #L.
+                   You stumble as you try to #s $n's #L.
+                   $N stumbles as $S tries to #s $n's #L.
+stumble stumble *  $N rushes you and you both fall to the ground!
+                   You rush at $n and both fall to the ground!
+                   $n becomes tangled with $N and both fall!
+stumble fumble *   $N trips and falls into you, sending your #o flying!
+                   You trip and fall into $n sending $s #o flying!
+                   $n loses $s #o as $N trips and falls into $m.
+stumble nearstumble *  $N steps in on you and trips over your feet!
+                    You step in on $n and trip over $s feet!
+                    $N steps in on $n and trips!
+stumble nearfumble *  $N steps in on you and trips while you fumble your #o.
+                   You step in on $n and trip, causing $m to juggle $s #o.
+                   $N steps in on $n and trips! 
+nearfumble any *   $N #S wildly at you and nearly fumbles.
+                   You #s wildly at $n and nearly fumble.
+                   $N #S wildly at $n and nearly fumbles.
+nearfumble stumble *  $N nearly drops $S #O as you fall to the ground.
+                     You trip and fall as $N nearly drops $S #O.
+                     $N fumbles with $S #O as $n falls to the ground!
+nearfumble fumble *  You drop your #o when it becomes tangled with $N's #O.
+                     $n drops $s #o when your weapons become tangled!
+                     $n gets tangled with $N and drops $s #o.
+nearfumble nearfumble *  Your #o becomes tangled with $N's #O.
+                         Your #O becomes tangled with $n's #o.
+                         $n's #o becomes tangled with $N's #O.
+nearfumble nearstumble * You nearly trip as $N fumbles with $S #O.
+                         You nearly drop your #O as $n nearly trips.
+                         $n nearly trips as $N fumbles with $S #O.
+nearstumble any *  $N nearly stumbles.
+                   You nearly stumble.
+                   $N nearly stumbles.
+nearstumble stumble *   You trip when your feet become tangled with $N!
+                        Your feet become tangled with $n and $e trips!
+                        $n's trips when $s feet get tangled with $N!
+nearstumble fumble *    $n drops $s #o as you nearly trip!
+                        You trip as $N nearly loses his #O!
+                        $N nearly trips as $n drops $s #O!
+nearstumble nearstumble * You both nearly stumble as $N trips over your feet!
+                   You both nearly stumble as you trip over $n's feet!
+                   $N closes on $n and both nearly trip!
+nearstumble nearfumble *  You nearly drop your #o as $N awkwardly steps in on you.
+                   You step in on $n and nearly trip!
+                   $n nearly drops $s #o as $N awkwardly charges $m.
+dead any *         $N kills you with a #s of $S #O!
+                   You kill $n with a #s of your #O!
+                   $N kills $n with a #s of $S #O!
+end-combat-message-table
+
+[end]
+
+[END]

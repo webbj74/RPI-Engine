@@ -1,0 +1,20 @@
+
+                         #6Unnamed RPI: Main Menu#0
+                         #6----------------------#0
+
+                    #61.#0 Enter the game.
+                               
+                    #62.#0 Create a new character.
+                    #63.#0 Delete a pending application.
+                    #64.#0 Retire your current character.
+                    #65.#0 View your characters.
+                          
+                    #66.#0 Update your e-mail address.
+                    #67.#0 Change your account password.
+                    #68.#0 Toggle ANSI color setting.
+                    #69.#0 Toggle newsletter subscription.
+                          
+                    #610.#0 Check your game-mail.
+                         
+                    #611.#0 Log out.
+                                                 source: lib/text/menu1

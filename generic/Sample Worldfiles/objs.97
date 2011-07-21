@@ -1,0 +1,16 @@
+#97805
+fire CRAFT_ITEM burning campfire OTHER~
+#1a burning campfire#0~
+#1A campfire burns here.#0~
+   This cheery campfire melodiously crackles and pops as it 
+devours the assortment of twigs and sticks that form its fuel. 
+The flames reach into the air like razor-sharp fiery digits 
+trying to escape their earthly confines, but failing as they 
+deteriorate into wads of misty smoke. 
+~
+1 4096 0
+5 5 54 1
+100 0.000000
+0 0 0 0 0 0 1
+0.000000 5 1643 0 0 0 0
+$~
